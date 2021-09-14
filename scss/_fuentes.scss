@@ -1,0 +1,22 @@
+$pDesktop: 20px;
+$lafuente: 'Style script', cursive;
+
+.cartel{
+	&__pedido{
+				&--tamano{
+							font-size:$pDesktop;
+				}
+	}
+}
+
+.textoProd
+{
+display: flex;
+justify-content: center;
+}
+
+.tituloProductos
+{
+  text-align: center;
+  font-family: $lafuente;
+}

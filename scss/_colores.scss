@@ -1,0 +1,25 @@
+$azul:blue;
+$negro:black;
+$rosa: pink;
+
+
+.cartel{
+	background-color:lightblue;
+	&__pedido{
+				color:$negro;
+	} 
+
+	&__buscador{
+	&--color{ color:$negro;
+
+	}
+	}
+}
+
+.final{
+	&__contacto{
+				&--color{
+							color:$negro;
+				}
+	}
+}

@@ -1,0 +1,101 @@
+$mediano:75%;
+$chico: 50%;
+$menoschico: 30%;
+$maschico: 25%;
+$fullAncho: 100%;
+$doscientos: 200px;
+
+.logo{
+	&__tamano{
+				width:$maschico;
+	}
+}
+
+.logoIg{
+		&__tamano{
+					width:$mediano;
+		}
+}
+
+.galeria{
+			&__uno{ width:$chico; }
+			&__dos{ width:$chico; }
+			&__tres{ width:$chico; }
+			&__cuatro{ width:$chico; }
+			&__cinco{ width:$chico; }
+			&__seis{ width:$chico; }
+}
+
+.final{
+	&__redes{
+				&--tamano{
+							 font-size:$mediano;
+							 }
+	}
+}
+
+.gridGaleria
+{
+  display: grid;
+  grid-template-areas: 
+  "imgProd1 imgProd2 imgProd3"
+  "imgProd4 imgProd5 imgProd6";
+grid-template-rows: auto auto ;
+grid-auto-columns: auto auto auto;
+
+}
+
+.imgProd1
+{grid-area: imgProd1;
+width: $menoschico;}
+.imgProd2
+{grid-area: imgProd2;
+width: $menoschico;}
+.imgProd3
+{grid-area: imgProd3;
+width: $menoschico;}
+.imgProd4
+{grid-area: imgProd4;
+width: $menoschico;}
+.imgProd5
+{grid-area: imgProd5;
+width: $menoschico;}
+.imgProd6
+{grid-area: imgProd6;
+width: $menoschico;}
+
+.listaProd
+{
+  display: inline-flex;
+
+  flex-direction: row;
+  background-color: lightblue;
+  margin: 10px;
+  padding: 10px;
+ flex-shrink: 2;
+ justify-content: center;
+list-style: none;
+}
+.barraProd 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imgProd
+
+{
+  width: $doscientos;
+}
+
+.grid {
+  border: 1px solid #fff;
+  overflow: hidden;
+  transition: all .3s linear;
+}
+
+.grid:hover img {
+  transform: scale(2);
+  transition: all .2s linear;
+}
