@@ -1,3 +1,4 @@
+$maximo: 100%;
 $mediano:75%;
 $chico: 50%;
 $menoschico: 30%;
@@ -11,20 +12,14 @@ $doscientos: 200px;
 	}
 }
 
-.logoIg{
-		&__tamano{
-					width:$mediano;
-		}
+.tamanioLogoIg{ 
+  width:$menoschico;
 }
 
-.galeria{
-			&__uno{ width:$chico; }
-			&__dos{ width:$chico; }
-			&__tres{ width:$chico; }
-			&__cuatro{ width:$chico; }
-			&__cinco{ width:$chico; }
-			&__seis{ width:$chico; }
+.scale{ 
+  width:$maximo; 
 }
+
 
 .final{
 	&__redes{
@@ -42,32 +37,47 @@ $doscientos: 200px;
   "imgProd4 imgProd5 imgProd6";
 grid-template-rows: auto auto ;
 grid-auto-columns: auto auto auto;
-
 }
 
 .imgProd1
-{grid-area: imgProd1;
-width: $menoschico;}
+{
+  grid-area: imgProd1;
+  width: $menoschico;
+}
+
 .imgProd2
-{grid-area: imgProd2;
-width: $menoschico;}
+{
+  grid-area: imgProd2;
+  width: $menoschico;
+}
+
 .imgProd3
-{grid-area: imgProd3;
-width: $menoschico;}
+{
+  grid-area: imgProd3;
+  width: $menoschico;
+}
+
 .imgProd4
-{grid-area: imgProd4;
-width: $menoschico;}
+{
+  grid-area: imgProd4;
+  width: $menoschico;
+}
+
 .imgProd5
-{grid-area: imgProd5;
-width: $menoschico;}
+{
+  grid-area: imgProd5;
+  width: $menoschico;
+}
+
 .imgProd6
-{grid-area: imgProd6;
-width: $menoschico;}
+{
+  grid-area: imgProd6;
+  width: $menoschico;
+}
 
 .listaProd
 {
   display: inline-flex;
-
   flex-direction: row;
   background-color: lightblue;
   margin: 10px;
@@ -81,6 +91,7 @@ list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0;
 }
 
 .imgProd
@@ -89,13 +100,44 @@ list-style: none;
   width: $doscientos;
 }
 
-.grid {
+.zoom {
   border: 1px solid #fff;
   overflow: hidden;
   transition: all .3s linear;
 }
 
-.grid:hover img {
+.zoom:hover img {
   transform: scale(2);
   transition: all .2s linear;
+}
+
+.logoIg
+{
+	width: $maximo;
+	justify-content: center;
+}
+
+.jenny
+{
+  width: $maximo;
+}
+
+
+@media only screen and (max-width: 767px)
+{
+  .logoIg 
+  { 
+    width: $maximo;
+	  justify-content: center;
+  }
+
+  .tamanioLogoIg 
+  {
+    width:$chico;
+  }
+  .final__redes 
+  {
+	 text-aling: center;
+	 padding: 0;
+  }
 }

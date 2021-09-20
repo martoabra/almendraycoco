@@ -1,22 +1,45 @@
-$pDesktop: 20px;
+$pDesktop: 11px;
 $lafuente: 'Style script', cursive;
-
-.cartel{
-	&__pedido{
-				&--tamano{
-							font-size:$pDesktop;
-				}
-	}
-}
+$sinestilo: none;
 
 .textoProd
 {
-display: flex;
-justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .tituloProductos
 {
   text-align: center;
   font-family: $lafuente;
+}
+
+.contacto
+{
+  text-align: center;
+  font-family: $lafuente;
+}
+
+.final
+{
+	&__estilo
+	{
+		font-size:$pDesktop;
+	}
+	&__redes
+	{
+	list-style: $sinestilo;
+	padding: 0;
+	}
+}
+
+.listadoPreguntas
+{
+	list-style: $sinestilo;
+	padding: 3%;
+}
+
+.estilocontacto
+{
+	font-family: $lafuente;
 }

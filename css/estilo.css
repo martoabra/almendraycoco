@@ -8,9 +8,6 @@
 .final__contacto--color {
   color: black; }
 
-.cartel__pedido--tamano {
-  font-size: 20px; }
-
 .textoProd {
   display: flex;
   justify-content: center; }
@@ -19,29 +16,32 @@
   text-align: center;
   font-family: "Style script", cursive; }
 
+.contacto {
+  text-align: center;
+  font-family: "Style script", cursive; }
+
+.final__estilo {
+  font-size: 11px; }
+
+.final__redes {
+  list-style: none;
+  padding: 0; }
+
+.listadoPreguntas {
+  list-style: none;
+  padding: 3%; }
+
+.estilocontacto {
+  font-family: "Style script", cursive; }
+
 .logo__tamano {
   width: 25%; }
 
-.logoIg__tamano {
-  width: 75%; }
+.tamanioLogoIg {
+  width: 30%; }
 
-.galeria__uno {
-  width: 50%; }
-
-.galeria__dos {
-  width: 50%; }
-
-.galeria__tres {
-  width: 50%; }
-
-.galeria__cuatro {
-  width: 50%; }
-
-.galeria__cinco {
-  width: 50%; }
-
-.galeria__seis {
-  width: 50%; }
+.scale {
+  width: 100%; }
 
 .final__redes--tamano {
   font-size: 75%; }
@@ -89,16 +89,34 @@
 .barraProd {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  padding: 0; }
 
 .imgProd {
   width: 200px; }
 
-.grid {
+.zoom {
   border: 1px solid #fff;
   overflow: hidden;
   transition: all .3s linear; }
 
-.grid:hover img {
+.zoom:hover img {
   transform: scale(2);
   transition: all .2s linear; }
+
+.logoIg {
+  width: 100%;
+  justify-content: center; }
+
+.jenny {
+  width: 100%; }
+
+@media only screen and (max-width: 767px) {
+  .logoIg {
+    width: 100%;
+    justify-content: center; }
+  .tamanioLogoIg {
+    width: 50%; }
+  .final__redes {
+    text-aling: center;
+    padding: 0; } }
