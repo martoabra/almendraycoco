@@ -8,6 +8,9 @@
 .final__contacto--color {
   color: black; }
 
+footer {
+  background-color: #f8f9fa; }
+
 .textoProd {
   display: flex;
   justify-content: center; }
