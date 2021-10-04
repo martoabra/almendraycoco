@@ -15,6 +15,10 @@ footer {
   display: flex;
   justify-content: center; }
 
+.cartelPedidos {
+  text-decoration: underline;
+  font-style: italic; }
+
 .tituloProductos {
   text-align: center;
   font-family: "Style script", cursive; }
@@ -48,6 +52,9 @@ footer {
 
 .final__redes--tamano {
   font-size: 75%; }
+
+.textojenny {
+  font-size: 25px; }
 
 .gridGaleria {
   display: grid;

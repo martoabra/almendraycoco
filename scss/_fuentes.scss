@@ -1,6 +1,7 @@
 $pDesktop: 11px;
 $lafuente: 'Style script', cursive;
 $sinestilo: none;
+$fuentecartel: italic;
 
 .textoProd
 {
@@ -8,6 +9,11 @@ $sinestilo: none;
 	justify-content: center;
 }
 
+.cartelPedidos
+{
+	text-decoration: underline;
+	font-style: $fuentecartel;
+}
 .tituloProductos
 {
   text-align: center;
